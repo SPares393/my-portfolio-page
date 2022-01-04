@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
       rel="stylesheet"
     />
+    <script
+    src="https://kit.fontawesome.com/99d895a3dc.js"
+    crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <nav class="nav_bar">
@@ -22,10 +26,66 @@
     </nav>
     <main>
         <div class="about_me">
-            <h3>Hi, I'm Stu. Welcome to my website!</h3>
+            <h3 class="welcome">Hi, I'm Stu. Welcome to my website!</h3>
             <p>I'm a former sales professional based in Bristol, currently retraining as a web developer on the _nology self-paced course.</p>
             <p>When I’m not in front of the computer, you’ll find me in front of the cooker, with a board game, or on a rugby pitch.</p>
             <p>Take a look at some of my projects below, and get in touch if you’d like to work together!</p>
+        </div>
+        <hr>
+        <div class="projects">
+            <div class="projects_list">
+                <div class="project_card">
+                    <img src="images/beer_icon.jpg" alt="project_icon" class="project_card_image">
+                    <div class="project_text">
+                        <h3>#AllTheBeers</h3>
+                        <p>A React project using the PunkAPI to display Brewdog's back catalogue of beers</p>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <img src="images/snake_icon.png" alt="project_icon" class="project_card_image">
+                    <div class="project_text">
+                        <h3>Snakes and Ladders</h3>
+                        <p>A vanilla JS version of the classic board game</p>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <img src="images/morse_icon.jpg" alt="project_icon" class="project_card_image">
+                    <div class="project_text">
+                        <h3>Morse Code Translator</h3>
+                        <p>Uses JS array methods to translate English to Morse Code, and vice versa</p>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <img src="images/calculator_icon.jpg" alt="project_icon" class="project_card_image">
+                    <div class="project_text">
+                        <h3>Calculator</h3>
+                        <p>A JS calculator which stores and displays the results of previous operations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="contact_me">
+            <h3>Get in touch!</h3>
+            <div class="contact_icons">
+                <a
+                  href="https://www.linkedin.com/in/stuart-pares-6269a2170/"
+                  target="_blank"
+                  class="contact_icon_link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a
+                  href="https://github.com/SPares393"
+                  target="_blank"
+                  class="contact_icon_link"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a
+                  href="mailto:stuartpares@live.co.uk"
+                  class="contact_icon_link"
+                  ><i class="far fa-envelope"></i
+                ></a>
+            </div>
         </div>
     </main>
 </body>
