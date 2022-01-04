@@ -66,6 +66,15 @@ main {
   transform: scale(0.99);
 }
 
+.card_link {
+  display: flex;
+  align-items: center;
+  color: #333333;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
 .project_card_image {
   height: 100px;
   width: 100px;
