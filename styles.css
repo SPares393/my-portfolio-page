@@ -6,21 +6,22 @@
 }
 
 .nav_bar {
-  background-color: #56915d;
-  border-right: 3px solid #333333;
+  background-image: linear-gradient(to right, #56915d, #A0c3a3);
+  /* border-right: 3px solid #333333; */
   height: 100vh;
-  width: 20vw;
+  width: 30vw;
   position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-right: 125px;
 }
 
 .nav_image {
   border-radius: 50%;
-  width: 80%;
+  width: 50%;
 }
 
 .nav_intro {
@@ -30,26 +31,56 @@
   line-height: 5rem;
 }
 
+.nav_links {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: #F6F2D4;
+  line-height: 4rem;
+}
+
 main {
-  max-height: 100vh;
-  margin-left: 20%;
-  padding: 25px 50px;
+  margin-left: 30%;
+  padding: 0 50px;
+  background-color: #A0c3a3;
+}
+
+hr {
+  height: 2px;
+  border-top: 1px solid #eeeeee;
 }
 
 .about_me {
   font-size: 1.5rem;
-  margin: 25px 0;
+  padding: 50px 0;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #333333;
 }
 
-.welcome {
-  margin-bottom: 25px;
+.welcome_title {
+  margin: 25px 0;
+  font-size: 2.5rem;
+}
+
+.welcome_message {
+  margin: 25px;
 }
 
 .projects {
-  margin: 25px 0;
+  height: 100vh;
+  padding: 50px 0;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .project_card {
@@ -82,16 +113,19 @@ main {
 }
 
 .contact_me {
-  font-size: 1.5rem;
+  color:#555555;
+  padding: 50px 0;
+  text-align: center;
+  height: 100vh;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 25px;
+  justify-content: space-between;
 }
 
 .contact_icons {
   margin: 10px;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 .contact_icon_link {
