@@ -24,9 +24,13 @@
   width: 60%;
 }
 
+.header {
+  font-size: 3rem;
+}
+
 .nav_intro {
   color: #F6F2D4;
-  margin: 50px 25px;
+  margin: 50px 25px 25px;
   line-height: 5rem;
 }
 
@@ -60,7 +64,7 @@ hr {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   color: #333333;
   line-height: 2.5rem;
 }
@@ -70,46 +74,152 @@ hr {
   font-size: 2.5rem;
 }
 
+@keyframes title {
+  0% {color: #333333};
+  25% {color: #F6F2D4};
+  100% {color: #333333};
+}
+
+.my_name {
+  font-size: 4rem;
+  color: #F6F2D4;
+  animation-name: title;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 .welcome_message {
   margin: 25px;
+  z-index: 2;
+}
+
+.background_circle_1 {
+  background-image: linear-gradient(to bottom right, #F6F2D4, #A0c3a3);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+  z-index: 1;
+}
+
+.background_circle_2 {
+  background-image: linear-gradient(to top left, #F6F2D4, #A0c3a3);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10%;
+  left: 35%;
+  z-index: 1;
+}
+
+.background_circle_3 {
+  background-image: linear-gradient(to bottom left, #F6F2D4, #A0c3a3);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10%;
+  right: 40%;
+  z-index: 1;
 }
 
 .projects {
   height: 100vh;
-  padding: 50px 0;
+  /* padding: 50px 0; */
+  /* margin: 0 100px 0 0; */
   font-size: 1.25rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.projects_list {
+  display:flex;
+  flex-wrap: wrap;
+  width: 100%;
+  /* justify-content: space-evenly; */
+}
+
+.list_1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.list_2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .project_card {
-  height: 100px;
-  border: 3px solid #555555;
-  border-radius: 10px;
-  display: flex;
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
   align-items: center;
+  text-align: center;
   padding: 10px;
-  margin: 10px 0;
+  margin: 25px 50px;
+  position: relative;
+}
+
+.card_1 {
+  background-image: linear-gradient(to bottom left, #F6F2D4, #A0c3a3);
+  /* left: -100px; */
+}
+
+.card_2 {
+  background-image: linear-gradient(to top right, #F6F2D4, #A0c3a3);
+  /* top: -250px;
+  left: 450px; */
+}
+
+.card_3 {
+  background-image: linear-gradient(to bottom right, #F6F2D4, #A0c3a3);
+  /* top: -350px;
+  left: 100px; */
+}
+
+.card_4 {
+  background-image: linear-gradient(to bottom right, #F6F2D4, #A0c3a3);
+  /* top: -650px;
+  left: 750px; */
 }
 
 .project_card:hover {
-  transform: scale(0.99);
+  transform: scale(0.95);
 }
 
-.card_link {
-  display: flex;
-  align-items: center;
+.project_links {
+  color: #333333;
+  font-size: 2rem;
+  margin: 10px;
+}
+
+.icon_link {
   color: #333333;
   text-decoration: none;
-  height: 100%;
-  width: 100%;
+  margin: 5px;
+}
+
+.icon_link:hover {
+  transform: scale(1.5);
+}
+
+.fas:hover, .fab:hover, .far:hover {
+  transform: scale(1.5);
 }
 
 .project_card_image {
   height: 80px;
   width: 80px;
-  margin-right: 50px;
+  border-radius: 50%;
+  margin: 20px;
 }
 
 .contact_me {
@@ -120,7 +230,18 @@ hr {
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_message {
+  background-image: linear-gradient(to bottom right, #F6F2D4, #A0c3a3);
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contact_icons {

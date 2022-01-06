@@ -21,7 +21,7 @@
     <nav class="nav_bar">
         <img src="images/nav_image.jpg" alt="Me" class="nav_image">
         <div class="nav_intro">
-            <h1>Stuart Pares</h1>
+            <h1 class="header">Stuart Pares</h1>
             <hr>
             <h2>Trainee Web Developer</h2>
         </div>
@@ -33,60 +33,87 @@
     </nav>
     <main>
         <div class="about_me" id="about_me">
-            <hr>
             <div class="welcome_message">
-                <h3 class="welcome_title">Hi, I'm Stu. Welcome to my website!</h3>
+                <h3 class="welcome_title">Hi, I'm <span class="my_name">Stu</span>. Welcome to my website!</h3>
                 <p>I'm a former sales professional based in Bristol, currently retraining as a web developer on the _nology self-paced course.</p>
                 <p>When I’m not in front of the computer, you’ll find me in front of the cooker, with a board game, or on a rugby pitch.</p>
                 <p>Take a look at some of my projects below, and get in touch if you’d like to work together!</p>    
             </div>
-            <hr>
+            <div class="background_circle_1"></div>
+            <div class="background_circle_2"></div>
+            <div class="background_circle_3"></div>
         </div>
         <div class="projects" id="projects">
-            <hr>
             <div class="projects_list">
-                <div class="project_card">
-                    <a href="https://spares393.github.io/brewdogAPI-project/" class="card_link" target="#">
+                <div class="list_1">
+                    <div class="project_card card_1">
                         <img src="images/beer_icon.jpg" alt="project_icon" class="project_card_image">
                         <div class="project_text">
                             <h3>#AllTheBeers</h3>
                             <p>A React project using the PunkAPI to display Brewdog's back catalogue of beers</p>
                         </div>
-                    </a>
+                        <div class="project_links">
+                            <a href="https://spares393.github.io/brewdogAPI-project/" class="icon_link" target="#">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/SPares393/brewdogAPI-project" class="icon_link" target="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                 </div>
-                <div class="project_card">
-                    <a href="https://spares393.github.io/javascript-game/" class="card_link" target="#">
+                <div class="project_card card_2">
                         <img src="images/snake_icon.png" alt="project_icon" class="project_card_image">
                         <div class="project_text">
                             <h3>Snakes and Ladders</h3>
                             <p>A vanilla JS version of the classic board game</p>
                         </div>
-                    </a>
+                        <div class="project_links">
+                            <a href="https://spares393.github.io/javascript-game/" class="icon_link" target="#">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/SPares393/javascript-game" class="icon_link" target="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                 </div>
-                <div class="project_card">
-                    <a href="https://spares393.github.io/morse-code-translator/" class="card_link" target="#">
+                </div>
+                <div class="list_2">
+                <div class="project_card card_3">
                         <img src="images/morse_icon.jpg" alt="project_icon" class="project_card_image">
                         <div class="project_text">
                             <h3>Morse Code Translator</h3>
                             <p>Uses JS array methods to translate English to Morse Code, and vice versa</p>
                         </div>
-                    </a>
+                        <div class="project_links">
+                            <a href="https://spares393.github.io/morse-code-translator/" class="icon_link" target="#">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/SPares393/morse-code-translator" class="icon_link" target="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                 </div>
-                <div class="project_card">
-                    <a href="https://spares393.github.io/calculator-project/" class="card_link" target="#">
+                <div class="project_card card_4">
                         <img src="images/calculator_icon.jpg" alt="project_icon" class="project_card_image">
                         <div class="project_text">
                             <h3>Calculator</h3>
                             <p>A JS calculator which stores and displays the results of previous operations</p>
                         </div>
+                        <div class="project_links">
+                            <a href="https://spares393.github.io/calculator-project/" class="icon_link" target="#">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                            <a href="https://github.com/SPares393/calculator-project" class="icon_link" target="#">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </a>
                 </div>
+                </div>
             </div>
-            <hr>
         </div>
         <div class="contact_me" id="contact">
-            <hr>
-            <div>
+            <div class="contact_message">
                 <h3>Get in touch!</h3>
                 <div class="contact_icons">
                     <a
@@ -108,7 +135,6 @@
                     ></a>
                 </div>
             </div>
-            <hr>
         </div>
     </main>
     <script>
